@@ -90,3 +90,14 @@ body{
     border: 0.5px solid var(--border-color);
     border-radius: var(--border-radius);
 }
+
+@media screen and (max-width: 520px){
+    .box{
+        width: 80%;
+    }
+
+    .qr-footer a{
+        padding: 12px;
+        font-size: 13px;
+    }
+}

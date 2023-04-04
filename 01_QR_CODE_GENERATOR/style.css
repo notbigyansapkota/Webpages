@@ -74,5 +74,5 @@ body{
     margin-inline: 2px;
     color: var(--primary-color);
     font-weight: 600;
-    border-radius: var(--border-color);
+    border-radius: var(--border-radius);
 }

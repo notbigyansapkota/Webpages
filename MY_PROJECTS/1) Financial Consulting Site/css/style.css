@@ -4,11 +4,11 @@
     --primary-color: #C63F60 ;
     --secondary-color: #3B58B8 ;
     --text-color: #fff ;
-    font-family: 'Open Sans', sans-serif;
 }
 
 *{
     /* border: 1px solid red; */
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
@@ -23,6 +23,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 5;
 }
 
 .header .logo{
@@ -117,6 +118,131 @@
 }
 
 .services {
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
+
+.services #chart{
+    background-image: url('../images/chart.png');
+    background-size: cover;
+    margin: 0 0 0 15rem;
+    width: 25rem;
+    height: 15rem;
+    border: 1px solid rgba(128, 128, 128, 0.13);
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px 5px rgba(219, 218, 218, 0.35)
+}
+
+.services #chart:hover{
+    cursor: pointer;
+    background-image: url('../images/chart-1.png');
+}
+
+.services .chart-detail{
+    margin-left: 3rem;
+    width: 25rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-detail h3{
+    font-weight: 650;
+    font-size: 30px;
+    letter-spacing: 0.4rem;
+}
+
+.chart-detail p{
+    font-size: 1.1rem;
+    font-weight: 350;
+    padding: 1.5rem;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.chart-detail a button{
+    border: none;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    transform: translate(-4.5rem , 2rem);
+    font-size: 1rem;
+    padding: 0.7rem 2rem;
+}
+
+.chart-detail a button:hover{
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: var(--text-color);
+}
+
+
+.team {
+    display: flex;
+    align-items: center;
+    background-color: #F6F8FD;
+    width: 100%;
+    height: 70vh;
+}
+
+.team .team-detail{
+    margin-left: 4rem;
+    padding: 7rem;
+    width: 50%;
+}
+
+.team-detail h1{
+    font-weight: 650;
+    font-size: 30px;
+    letter-spacing: 0.4rem;
+    margin-bottom: 2rem;
+}
+
+.team-detail p{
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    font-weight: 350;
+}
+
+.team-detail a button{
+    border: none;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0.7rem 2rem;
+}
+
+.team-image img{
+    border: none;
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px 3px rgba(146, 145, 145, 0.503);
+    margin-left: 5rem;
+    width: 25rem;
+    height: 15rem;
+}
+
+.client {
+    background-color: grey;
+    padding: 5rem 11rem;
+    height: 100vh;
+    width: 100%;
+}
+
+.images .client-logo{
+    margin-left: -5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.images .client-logo img{
+    padding: 0.1rem;
+    margin: 0.5rem;
+    width: 23rem;
+    height: 10rem;
+}
+

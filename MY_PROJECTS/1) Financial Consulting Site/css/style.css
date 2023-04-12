@@ -233,7 +233,7 @@
 }
 
 .client {
-    padding: 7rem 11rem;
+    padding: 2rem 11rem;
     height: 70vh;
     width: 100%;
 }
@@ -248,8 +248,8 @@
 .images .client-logo img{
     padding: 0.1rem;
     margin: 0.5rem;
-    width: 23rem;
-    height: 10rem;
+    width: 16rem;
+    height: 7rem;
 }
 
 .client h1{
@@ -274,4 +274,43 @@
     border:1px solid var(--primary-color);
     color:var(--primary-color);
     background-color: white ;
+}
+
+.footer{
+    margin-top: 3rem;
+    background-color: #DBDBDB;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid rgb(125, 125, 125);
+    height: 28vh;
+    width: 100%;
+}
+
+.footer .copy, .footer .powered{
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+.footer .copy{
+    margin-left: 3rem;
+}
+
+.footer .powered{
+    margin-right: 3rem;
+}
+
+.footer .socials{
+    width: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .socials a i{
+    color: black;
+}
+
+.powered a{
+    text-decoration: none;
+    color: var(--secondary-color);
 }

@@ -165,7 +165,7 @@
 }
 
 .chart-detail a button{
-    border: none;
+    border: 1px solid transparent;
     color: var(--text-color);
     background-color: var(--primary-color);
     transform: translate(-4.5rem , 2rem);
@@ -209,11 +209,18 @@
 }
 
 .team-detail a button{
-    border: none;
+    border: 1px solid transparent;
     color: var(--text-color);
     background-color: var(--primary-color);
     font-size: 1rem;
     padding: 0.7rem 2rem;
+}
+
+.team-detail a button:hover{
+    cursor: pointer;
+    border:1px solid var(--primary-color);
+    color:var(--primary-color);
+    background-color: white ;
 }
 
 .team-image img{
@@ -226,9 +233,8 @@
 }
 
 .client {
-    background-color: grey;
-    padding: 5rem 11rem;
-    height: 100vh;
+    padding: 7rem 11rem;
+    height: 70vh;
     width: 100%;
 }
 
@@ -246,3 +252,26 @@
     height: 10rem;
 }
 
+.client h1{
+    color: var(--secondary-color);
+    font-weight: 650;
+    font-size: 30px;
+    letter-spacing: 0.4rem;
+    margin-bottom:0.5rem;
+}
+
+.client a button{
+    margin-top: 2rem;
+    border: 1px solid transparent;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0.7rem 2rem;
+}
+
+.client a button:hover{
+    cursor: pointer;
+    border:1px solid var(--primary-color);
+    color:var(--primary-color);
+    background-color: white ;
+}

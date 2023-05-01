@@ -89,7 +89,6 @@ body{
     color: white;
     font-size: 1.5rem;
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
     margin-bottom: 2rem;
 }
 
@@ -100,18 +99,33 @@ body{
     letter-spacing: 3px;
     font-size: 1rem;
     font-weight: 500;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 1.5rem;
     padding: 1rem 4rem;
 }
 
 .main button:hover{
+    cursor: pointer;
     background-color: black;
+    border-color: white;
 }
 
 #services {
     height: 80vh;
-    background-color: var(--primary-color);
+    padding-block: 5rem;
+    background: url('./images/background-4.jpg') center/cover no-repeat;
+}
+
+#services h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
 }
 
 .foods{
@@ -121,20 +135,103 @@ body{
 }
 
 .foods .items{
-    border: 1px solid grey;
-    border-radius: 15px;
-    height: 25rem;
-    width: 17rem;
-    padding: 5rem 5rem;    
-}
-
-.items h3{
-    margin: 1rem 0;
+   background-color: white;
+   box-shadow: 5px 5px 15px rgba(13, 13, 13, 0.623);
+   border: 1px solid grey;
+   border-radius: 15px;
+   height: 25rem;
+   width: 17rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-inline: 2.8rem;
+   z-index: 200;
 }
 
 .items img{
-    width: 5rem;
-    height: 5rem;
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    border: 5px double var(--text-color);
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    transition: 0.5s ease-in;
+}
+
+.items img:hover{
+    transform: rotate(20deg);
+}
+
+.items h3{
+    margin-block: 2rem;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.items p{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.items a {
+    font-family: 'Inter', sans-serif;
+    padding-block: 1rem;
+    color: var(--text-color);
+}
+
+.items a:hover{
+    color: black;
+}
+
+.loaf{
+    display: flex;
+    padding: 10rem 7rem;
+    background-color: var(--primary-color);
+    height: 150vh;
+}
+
+.loaf img{
+    height: 40rem;
+    width: 40rem;
     border-radius: 50%;
 }
 
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-left: 2rem;
+}
+
+.box h1{
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.box p{
+    margin-block: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.box button{
+    margin-left: 0;
+    background-color: var(--text-color);
+    color: white;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 1.5rem;
+    padding: 1rem 3rem;
+}
+
+.box button:hover{
+    cursor: pointer;
+    background-color: black;
+}

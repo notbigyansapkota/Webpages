@@ -190,8 +190,8 @@ body{
 .loaf{
     display: flex;
     padding: 10rem 7rem;
-    background-color: var(--primary-color);
-    height: 150vh;
+    background-color: #F3DFCA;
+    height: 180vh;
 }
 
 .loaf img{
@@ -234,4 +234,105 @@ body{
 .box button:hover{
     cursor: pointer;
     background-color: black;
+}
+
+.boxes{
+    display: flex;
+    padding-inline: 5rem;
+    margin-top: -10rem;
+}
+
+.boxes .sec{
+    margin-left: 2rem;
+    border-radius: 1.5rem;
+    color: white;
+    background-color: #E2781A;
+    padding: 1.5rem;
+    height: 25rem;
+    width: 25rem;
+    border: none;
+    overflow-y: hidden;
+}
+
+.boxes .sec:nth-child(2){
+    background-color: #332E29;
+}
+
+.sec p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+}
+
+.sec h1{
+    font-family: 'Rubik', sans-serif;
+    margin-block: 1rem;
+    font-size: 2rem;
+}
+
+.mission{
+    height: 150vh;
+    background: url('./images/background-2.jpg');
+    color: black;
+    position: relative;
+}
+
+.mission .ours{
+    position: absolute;
+    top: 10rem;
+    right: 10rem;
+    background: white;
+    padding: 3rem;
+    width: 27rem;
+    height: 27rem;
+    border: none;
+    border-radius: 1.7rem;
+}
+
+.ours h1{
+    font-family: 'Rubik', sans-serif;
+}
+
+.ours p{
+    font-family: 'Inter', sans-serif;
+    margin-block: 2rem;
+    line-height: 1.5rem;
+}
+
+.ours button{
+    margin-left: 0;
+    background-color: var(--text-color);
+    color: white;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 1.5rem;
+    padding: 1rem 3rem;
+}
+
+.ours button:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+.breads{
+    padding: 2rem;
+}
+
+.breads h1{
+    font-size: 2.2rem;
+    margin-block: 1rem 3rem;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+.bread-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.purchase{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }

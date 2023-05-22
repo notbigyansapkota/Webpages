@@ -316,7 +316,7 @@ body{
 }
 
 .breads{
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .breads h1{
@@ -325,14 +325,34 @@ body{
     font-family: 'Rubik', sans-serif;
     text-align: center;
 }
+
+
 .bread-row{
     display: flex;
     justify-content: space-between;
 }
 
 .purchase{
+    margin-bottom: 10rem;
+    padding: 5rem;
+    height: 20rem;
+    width: 20rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+}
+
+.purchase *{
+    margin-bottom: 1rem;
+}
+
+.purchase img{
+    border: none;
+    border-radius: 50%;
+    height: 18rem;
+    width: 18rem;
+}
+
+.purchase p{
+    text-align: center;
 }
